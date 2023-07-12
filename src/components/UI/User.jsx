@@ -10,7 +10,7 @@ export default function User({creator}) {
       >
         <div className="nft_coll">
           <div className="nft_wrap">
-            <Link to="/item-details">
+            <Link to={`/item-details/${creator.nftId}`}>
               <img src={creator.nftImage} className="lazy img-fluid" alt="" />
             </Link>
           </div>

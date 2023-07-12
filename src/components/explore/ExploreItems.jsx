@@ -18,11 +18,10 @@ const ExploreItems = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(explore);
-  console.log(itemCount)
+  
 
   async function filterItems(filter){
-    console.log(filter)
+    
     const {data} = await axios.get(`https://us-central1-nft-cloud-functions.cloudfunctions.net/explore?filter=${filter}`)
     setExplore(data)
   }
@@ -74,7 +73,7 @@ const ExploreItems = () => {
                   </div>
                 </div>
               </div>
-              <Link to="/item-details">
+              <Link to={`/item-details/${item.nftId}`}>
                 <img
                   src={item.nftImage}
                   className="lazy nft__item_preview"
