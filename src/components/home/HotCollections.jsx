@@ -22,7 +22,7 @@ const HotCollections = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(creators);
+  
 
   const settings = {
     dots: false,

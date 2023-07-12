@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const AuthorItems = ({collection, authorImage}) => {
-  console.log(collection)
+  
   return (
     <div className="de_tab_content">
       <div className="tab-1">
@@ -36,7 +36,7 @@ const AuthorItems = ({collection, authorImage}) => {
                       </div>
                     </div>
                   </div>
-                  <Link to="/item-details">
+                  <Link to={`/item-details/${item.nftId}`}>
                     <img
                       src={item.nftImage}
                       className="lazy nft__item_preview"

@@ -13,7 +13,7 @@ const TopSellers = () => {
   useEffect(()=>{
     fetchSellers()
   },[])
-  console.log(sellers)
+  
   return (
     <section id="section-popular" className="pb-5">
       <div className="container">
