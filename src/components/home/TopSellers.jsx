@@ -20,11 +20,11 @@ const TopSellers = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>Top Sellers</h2>
+              <h2 data-aos="zoom-in" data-aos-duration="1500">Top Sellers</h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-12" data-aos="zoom-in" data-aos-duration="1000">
             <ol className="author_list">
             {
               sellers.map((seller, index)=>(
