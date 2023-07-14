@@ -42,36 +42,13 @@
     position: relative !important;
 }
 
-/* Arrow Styling fort Hot Collections */
-.slick-arrow {
-    background-color: #fff!important;
-    color: black !important;
-    z-index: 50 !important;
-    font-size: 30px !important; 
+.owl-next{
+    right: 1px;
 }
 
-.slick-next{
-    visibility: hidden !important;
+.owl-prev{
+    left: 1px;
 }
-
-.slick-prev{
-    visibility: hidden !important;
-}
-.slick-prev:after{
-    content: "<" !important;
-    visibility: visible !important;
-    position: absolute !important;
-    left: 30px !important;
-}
-
-.slick-next:after{
-    content: ">" !important;
-    visibility: visible !important;
-    position: absolute !important;
-    right: 30px !important;
-}
-
-
 
 
 .itemSlide{
@@ -82,6 +59,12 @@
 
 .nft__item{
     align-items: center !important;
+}
+
+.skeleton_Slide{
+    /* margin: 0 16px !important; */
+    width: 90% !important;
+    height: 90% !important;
 }
 
 
